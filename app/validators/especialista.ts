@@ -23,6 +23,7 @@ export const updateEspecialistaValidator = vine.compile(
     nombre_completo: vine.string().minLength(3),
     especialidad: vine.string(),
     registro_profesional: vine.string(), // en update no se valida unicidad para el mismo registro
+    activo: vine.boolean().optional(), // ✅ ESTA ES LA LÍNEA CLAVE
     horarios: vine
       .array(
         vine.object({

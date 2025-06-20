@@ -12,7 +12,7 @@ export default class extends BaseSchema {
     })
   }
 
-    async down() {
-      this.schema.dropTable(this.tableName)
-    }
+  async down() {
+    this.schema.dropTable(this.tableName)
   }
+}

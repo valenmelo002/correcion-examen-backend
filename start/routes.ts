@@ -21,7 +21,6 @@ router.group(() => {
   router.post('/:id/restore', [EspecialistasController, 'restore']) // restaurar
   router.delete('/:id/force', [EspecialistasController, 'forceDelete']) // eliminar permanente
 }).prefix('/especialistas')
-
 router.get('/dia-semana', [DiaSemanasController, 'list'])
 
 router.get('/', async () => {
